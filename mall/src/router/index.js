@@ -11,19 +11,19 @@ export default new VueRouter({
     },
     {
       path: "/home",
-      component: () => import("views/home/Home")
+      component: () => import("../views/home/Home")
     },
     {
       path: "/category",
-      component: () => import("views/category/Category")
+      component: () => import("../views/category/Category")
     },
     {
       path: "/shopcart",
-      component: () => import("views/shopcart/Shopcart")
+      component: () => import("../views/shopcart/Shopcart")
     },
     {
       path: "/profile",
-      component: () => import("views/profile/Profile")
+      component: () => import("../views/profile/Profile")
     }
   ],
   mode: "history"
