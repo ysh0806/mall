@@ -57,7 +57,7 @@
         this.playTimer = window.setInterval(() => {
           this.currentIndex++;
           this.scrollContent(-this.currentIndex * this.totalWidth);
-        }, this.intercal);
+        }, this.interval);
       },
       stopTimer() {
         window.clearInterval(this.playTimer);
