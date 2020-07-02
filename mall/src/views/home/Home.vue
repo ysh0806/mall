@@ -5,6 +5,7 @@
     <recommend-view :recommends="recommends"></recommend-view>
     <popular-view></popular-view>
     <tab-control class="tab-control" :titles="['流行', '新款', '精选']"></tab-control>
+    <goods-list></goods-list>
 
     <ul>
       <li>列表1</li>
@@ -118,6 +119,7 @@
 
   import NavBar from "../../components/common/navbar/NavBar";
   import TabControl from "../../components/content/tabControl/TabControl";
+  import GoodsList from "../../components/content/goods/GoodsList";
 
   import {getHomeMultiData, getHomeGoods} from "../../network/home";
 
@@ -128,7 +130,8 @@
       RecommendView,
       PopularView,
       NavBar,
-      TabControl
+      TabControl,
+      GoodsList
     },
     data() {
       return {
